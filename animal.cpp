@@ -28,6 +28,15 @@ std::ostream& operator<< (std::ostream& out, const Animal& animal)
     return out;
 }
 
+Animal* Animal::operator=(Animal& animal)
+{
+    this -> name = animal.getName();
+    this -> species = animal.getSpecies();
+    this -> breed = animal.getBreed();
+    this -> age = animal.getAge();
+    return this;
+}
+
 void Cat::say()
 {
     std::cout << voice << "!" << std::endl;

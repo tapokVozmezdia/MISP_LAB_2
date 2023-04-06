@@ -12,6 +12,7 @@ class Animal
         std::string getBreed() const ;
         std::string getName() const ;
         int getAge() const ;
+        Animal* operator=(Animal& animal);
 
     protected:
         std::string breed;
