@@ -1,6 +1,20 @@
 #include <iostream>
 #include "animalShop.h"
 
+Cat::Cat(std::string breed)
+{
+    voice = "meow";
+    species = "cat";
+    this->breed = breed;
+}
+
+Dog::Dog(std::string breed)
+{
+    voice = "woof";
+    species = "dog";
+    this->breed = breed;
+}
+
 std::string Animal::getSpecies() const 
 {
     return species;
@@ -42,6 +56,15 @@ void Cat::say()
     std::cout << voice << "!" << std::endl;
 }
 void Cat::play()
+{
+    std::cout << "It's playtime for " << name << std::endl;
+}
+
+void Dog::say()
+{
+    std::cout << voice << "!" << std::endl;
+}
+void Dog::play()
 {
     std::cout << "It's playtime for " << name << std::endl;
 }

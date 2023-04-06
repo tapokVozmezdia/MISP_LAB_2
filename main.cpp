@@ -3,9 +3,6 @@
 
 int main()
 {
-    //const Cat *nCat = new Cat;
-    Cat cat;
-    std::cout << cat << std::endl;
-    //delete nCat;
+    Shop shop1 = Shop("LOL");
     return 0;
 }

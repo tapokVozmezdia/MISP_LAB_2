@@ -25,6 +25,17 @@ class Animal
 class Cat : public Animal
 {
     public:
+        Cat(std::string breed);
+        void say() override;
+        void play() override;
+    private:
+
+};
+
+class Dog : public Animal
+{
+    public:
+        Dog(std::string breed);
         void say() override;
         void play() override;
     private:
